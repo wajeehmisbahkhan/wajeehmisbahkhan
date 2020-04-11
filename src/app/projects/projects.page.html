@@ -1,1 +1,9 @@
-<ion-text>Projects</ion-text>
+<ion-header class="ion-text-uppercase">
+  <header></header>
+</ion-header>
+<ion-content>
+  <ion-text>Projects</ion-text>
+  <ng-container *ngFor="let number of numbers">
+    <ion-item>Project {{number}}</ion-item>
+  </ng-container>
+</ion-content>
