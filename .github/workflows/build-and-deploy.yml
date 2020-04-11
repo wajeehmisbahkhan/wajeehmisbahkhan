@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  frontend:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get latest commit
@@ -22,7 +22,7 @@ jobs:
           ENVIRONMENT_CONTENT: ${{ secrets.ENVIRONMENT_CONTENT }}
           ENVIRONMENT_PROD_CONTENT: ${{ secrets.ENVIRONMENT_PROD_CONTENT }}
       - name: Build Using npm
-        run: node_modules/.bin/ng build --prod
+        run: node_modules/.bin/ionic build --prod
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.0
         with:
