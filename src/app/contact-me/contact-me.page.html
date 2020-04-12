@@ -2,6 +2,35 @@
   <header></header>
 </ion-header>
 <ion-content>
-  <ion-text>Contact Me</ion-text>
+  <ion-card>
+    <ion-card-header class="ion-text-uppercase">
+      <ion-title class="ion-text-center">Contact Me</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row class="ion-justify-content-center">
+        <!-- Email -->
+        <ion-col size="12" size-md="6" size-lg="5">
+          <ion-item>
+            <ion-label position="floating">Your Email</ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-textarea
+              placeholder="Enter your message..."
+              rows="6"
+            ></ion-textarea>
+          </ion-item>
+          <ion-button expand="full" class="ion-margin-vertical"
+            >Send Message</ion-button
+          >
+        </ion-col>
+        <ion-col size-lg="1" size="0"></ion-col>
+        <!-- Map -->
+        <ion-col size="12" size-md="6" size-lg="5">
+          <ion-text>Hello</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
   <footer></footer>
 </ion-content>
