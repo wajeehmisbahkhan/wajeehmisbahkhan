@@ -82,3 +82,14 @@ $screen-xl-min: 1200px;
     padding-right: 18vw;
   }
 }
+
+// Common classes
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
