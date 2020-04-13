@@ -10,24 +10,44 @@
       <ion-row class="ion-justify-content-center">
         <!-- Email -->
         <ion-col size="12" size-md="6" size-lg="5">
-          <ion-item>
-            <ion-label position="floating">Your Email</ion-label>
-            <ion-input type="email"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-textarea
-              placeholder="Enter your message..."
-              rows="6"
-            ></ion-textarea>
-          </ion-item>
-          <ion-button expand="full" class="ion-margin-vertical"
-            >Send Message</ion-button
-          >
+          <form #emailForm="ngForm" (ngSubmit)="sendEmail(emailForm)">
+            <ion-item>
+              <ion-label position="floating">Your Email</ion-label>
+              <ion-input
+                name="email"
+                [(ngModel)]="email"
+                type="email"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-textarea
+                placeholder="Enter your message..."
+                rows="6"
+                name="message"
+                [(ngModel)]="message"
+                required
+              ></ion-textarea>
+            </ion-item>
+            <ion-button
+              expand="full"
+              class="ion-margin-vertical"
+              type="submit"
+              [disabled]="emailForm.invalid || sending"
+            >
+              <ng-component *ngIf="sending; else notSending"
+                >Sending...</ng-component
+              >
+              <ng-template #notSending>Send Message</ng-template>
+            </ion-button>
+          </form>
         </ion-col>
-        <ion-col size-lg="1" size="0"></ion-col>
+        <ion-col size="1" class="ion-hide-lg-down"></ion-col>
         <!-- Map -->
         <ion-col size="12" size-md="6" size-lg="5">
-          <ion-text>Hello</ion-text>
+          <agm-map [latitude]="lat" [longitude]="lng" [zoom]="16">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+          </agm-map>
         </ion-col>
       </ion-row>
     </ion-card-content>

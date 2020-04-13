@@ -8,6 +8,7 @@ import { ContactMePageRoutingModule } from './contact-me-routing.module';
 
 import { ContactMePage } from './contact-me.page';
 import { ComponentModule } from '../components/component.module';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ComponentModule } from '../components/component.module';
     FormsModule,
     IonicModule,
     ContactMePageRoutingModule,
-    ComponentModule
+    ComponentModule,
+    AgmCoreModule
   ],
   declarations: [ContactMePage]
 })
