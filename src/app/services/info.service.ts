@@ -24,6 +24,7 @@ export class InfoService {
       cloudComputing: new Skill('Industry', 'Cloud Computing'),
       artificialIntelligence: new Skill('Industry', 'Artificial Intelligence'),
       machineLearning: new Skill('Industry', 'Machine Learning'),
+      devops: new Skill('Industry', 'DevOps'),
       git: new Skill(
         'Tool',
         'Git',
@@ -35,6 +36,11 @@ export class InfoService {
         'Github',
         '../../assets/icon/github.png',
         'https://github.com/'
+      ),
+      githubActions: new Skill(
+        'Tool',
+        'Github Actions',
+        '../../assets/icon/github_actions.png'
       ),
       firebase: new Skill(
         'Tool',
@@ -141,7 +147,12 @@ export class InfoService {
         'Dagra Manor',
         'A CV Website',
         'This website was created for...',
-        []
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ]
       )
     );
   }

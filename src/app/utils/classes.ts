@@ -1,11 +1,13 @@
+import { SkillTitle } from './types';
+
 export class Skill {
-  title: string;
+  title: SkillTitle;
   text: string;
   pictureUrl: string;
   infoUrl: string;
 
   constructor(
-    title: string,
+    title: SkillTitle,
     text: string,
     pictureUrl?: string,
     infoUrl?: string

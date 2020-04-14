@@ -7,10 +7,12 @@ export interface Skills {
   frontEndDevelopment: Skill;
   backEndDevelopment: Skill;
   cloudComputing: Skill;
+  devops: Skill;
   artificialIntelligence: Skill;
   machineLearning: Skill;
   git: Skill;
   github: Skill;
+  githubActions: Skill;
   firebase: Skill;
   webrtc: Skill;
   html: Skill;

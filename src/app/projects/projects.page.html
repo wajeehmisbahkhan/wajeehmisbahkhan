@@ -31,7 +31,7 @@
               >{{ project.viewUrl }}</ion-button
             >
             <a *ngFor="let skill of project.skillsUsed" [href]="skill.infoUrl">
-              <ion-chip>
+              <ion-chip [color]="getSkillColor(skill)">
                 <ion-label>{{ skill.text }}</ion-label>
               </ion-chip>
             </a>

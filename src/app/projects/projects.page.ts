@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../utils/classes';
+import { Project, Skill } from '../utils/classes';
+import { InfoService } from '../services/info.service';
 
 @Component({
   selector: 'app-projects',
@@ -7,23 +8,24 @@ import { Project } from '../utils/classes';
   styleUrls: ['./projects.page.scss']
 })
 export class ProjectsPage implements OnInit {
-  projects: Array<Project> = [];
-
-  constructor() {
-    this.initProjects();
-  }
+  constructor(private info: InfoService) {}
 
   ngOnInit() {}
 
-  initProjects() {
-    this.projects.push(
-      new Project(
-        '',
-        'KarCab',
-        'A mega project',
-        'A project aimed at creating an uber clone.',
-        []
-      )
-    );
+  getSkillColor(skill: Skill) {
+    if (skill.title === 'Industry') {
+      return 'primary';
+    } else if (skill.title === 'Tool') {
+      return 'secondary';
+    } else if (skill.title === 'Framework') {
+      return 'tertiary';
+    } else if (skill.title === 'Language') {
+      return 'warning';
+    }
+    return 'danger';
+  }
+
+  get projects() {
+    return this.info.projects;
   }
 }
