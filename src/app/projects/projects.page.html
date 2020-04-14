@@ -2,9 +2,47 @@
   <header></header>
 </ion-header>
 <ion-content>
-  <ion-text>Projects</ion-text>
-  <ng-container *ngFor="let number of numbers">
-    <ion-item>Project {{number}}</ion-item>
+  <ion-text class="left-spacing right-spacing">
+    <ion-title>Projects</ion-title>
+    Text about the projects
+  </ion-text>
+  <ng-container
+    *ngFor="let project of projects"
+    class="left-spacing right-spacing"
+  >
+    <ion-row>
+      <!-- Picture -->
+      <ion-col size="3">
+        <ion-img
+          [src]="project.pictureUrl"
+          [alt]="'Project: ' + project.title"
+          width="100%"
+          height="100%"
+        ></ion-img>
+      </ion-col>
+      <ion-col size="9">
+        <ion-card>
+          <ion-card-header>
+            {{ project.title }}
+          </ion-card-header>
+          <ion-card-content>
+            <ion-text class="subtitle">{{ project.subtitle }}</ion-text>
+            <ion-text class="description">{{ project.description }}</ion-text>
+            <ion-button *ngIf="project.githubUrl"
+              >{{ project.githubUrl }}</ion-button
+            >
+            <ion-button *ngIf="project.viewUrl"
+              >{{ project.viewUrl }}</ion-button
+            >
+            <a *ngFor="let skill of project.skillsUsed" [href]="skill.url">
+              <ion-chip>
+                <ion-label>{{ skill.text }}</ion-label>
+              </ion-chip>
+            </a>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
   </ng-container>
   <footer></footer>
 </ion-content>

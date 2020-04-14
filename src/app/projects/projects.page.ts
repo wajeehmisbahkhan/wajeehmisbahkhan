@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from '../utils/classes';
 
 @Component({
   selector: 'app-projects',
@@ -6,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.page.scss']
 })
 export class ProjectsPage implements OnInit {
-  numbers: Array<number> = [];
+  projects: Array<Project> = [];
 
   constructor() {
-    for (let i = 0; i < 20; i++) {
-      this.numbers.push(i);
-    }
+    this.initProjects();
   }
 
   ngOnInit() {}
+
+  initProjects() {
+    this.projects.push(
+      new Project(
+        '',
+        'KarCab',
+        'A mega project',
+        'A project aimed at creating an uber clone.',
+        []
+      )
+    );
+  }
 }
