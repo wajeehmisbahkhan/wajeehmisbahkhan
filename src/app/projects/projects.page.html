@@ -30,7 +30,7 @@
             <ion-button *ngIf="project.viewUrl"
               >{{ project.viewUrl }}</ion-button
             >
-            <a *ngFor="let skill of project.skillsUsed" [href]="skill.url">
+            <a *ngFor="let skill of project.skillsUsed" [href]="skill.infoUrl">
               <ion-chip>
                 <ion-label>{{ skill.text }}</ion-label>
               </ion-chip>
