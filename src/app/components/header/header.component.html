@@ -6,13 +6,18 @@
     [routerLink]="['/', 'projects']"
     routerDirection="root"
   >
-    <ion-text class="ion-text-center ion-padding-horizontal">
+    <ion-text class="ion-padding-start">
       Projects
     </ion-text>
-    <ion-icon name="layers" class="ion-margin-left ion-hide-md-down"></ion-icon>
+    <span class="ion-padding-start ion-hide-md-down">
+      <ion-icon name="layers"></ion-icon>
+    </span>
   </ion-buttons>
   <!-- Home -->
   <ion-title class="ion-text-center">
+    <span class="theme-toggler" (click)="toggleDarkIcon()">
+      <ion-icon [name]="oppositeIcon" color="warning"></ion-icon>
+    </span>
     <span [routerLink]="['/']" routerDirection="root">
       <span class="ion-hide-sm-down">Wajeeh Misbah Khan</span>
       <span class="ion-hide-sm-up">WMK</span>
@@ -25,8 +30,10 @@
     [routerLink]="['/', 'contact-me']"
     routerDirection="root"
   >
-    <ion-icon name="call" class="ion-hide-md-down"></ion-icon>
-    <ion-text class="ion-text-center ion-padding-horizontal">
+    <span class="ion-padding-end ion-hide-md-down">
+      <ion-icon name="call"></ion-icon>
+    </span>
+    <ion-text class="ion-padding-end">
       Contact Me
     </ion-text>
   </ion-buttons>

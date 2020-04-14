@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from '@agm/core';
 import { environment } from 'src/environments/environment';
+import { ThemeService } from './services/theme.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +26,8 @@ import { environment } from 'src/environments/environment';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    ThemeService
   ],
   bootstrap: [AppComponent]
 })
