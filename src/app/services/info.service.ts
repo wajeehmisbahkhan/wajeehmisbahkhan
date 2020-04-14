@@ -156,5 +156,14 @@ export class InfoService {
         ]
       )
     );
+    for (const project of this.projects) {
+      // Info urls
+      if (!project.viewUrl) {
+        project.viewUrl = `https://www.google.com/search?q=${project.title}`;
+      }
+      if (!project.pictureUrl) {
+        project.pictureUrl = `https://ui-avatars.com/api/?name=${project.title}`;
+      }
+    }
   }
 }

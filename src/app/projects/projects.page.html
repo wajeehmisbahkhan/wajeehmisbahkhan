@@ -7,33 +7,58 @@
     <ion-text class="ion-padding">Text about the projects</ion-text>
   </div>
   <div *ngFor="let project of projects" class="left-spacing right-spacing">
-    <ion-row>
+    <ion-row class="ion-align-items-center ion-margin-vertical card-container">
       <!-- Picture -->
-      <ion-col size="3">
+      <ion-col class="ion-no-padding" size="3">
         <ion-img
           [src]="project.pictureUrl"
           [alt]="'Project: ' + project.title"
           width="100%"
         ></ion-img>
       </ion-col>
-      <ion-col size="9">
-        <ion-card>
+      <ion-col class="ion-no-padding" size="9">
+        <ion-card class="ion-no-margin">
           <ion-card-header>
-            {{ project.title }}
+            <ion-card-title>{{ project.title }}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ion-text class="subtitle">{{ project.subtitle }}</ion-text>
-            <ion-text class="description">{{ project.description }}</ion-text>
-            <ion-button *ngIf="project.githubUrl"
-              >{{ project.githubUrl }}</ion-button
+            <ion-card-subtitle>
+              <ion-text>{{ project.subtitle }}</ion-text>
+            </ion-card-subtitle>
+            <ion-text class="description ion-padding-vertical"
+              >{{ project.description }}</ion-text
             >
-            <ion-button *ngIf="project.viewUrl"
-              >{{ project.viewUrl }}</ion-button
+            <a
+              *ngIf="project.githubUrl"
+              target="_blank"
+              [href]="project.githubUrl"
+              class="view-link"
             >
+              <ion-button color="success">
+                <ion-text color="dark">
+                  View on Github
+                  <ion-icon name="arrow-forward" color="light"></ion-icon>
+                </ion-text>
+              </ion-button>
+            </a>
+            <a
+              *ngIf="project.viewUrl"
+              target="_blank"
+              [href]="project.viewUrl"
+              class="view-link"
+            >
+              <ion-button color="light">
+                <ion-text color="dark">
+                  View Project
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </ion-text>
+              </ion-button>
+            </a>
             <a
               *ngFor="let skill of project.skillsUsed"
               target="_blank"
               [href]="skill.infoUrl"
+              class="nostyle"
             >
               <ion-chip [color]="getSkillColor(skill)">
                 <ion-label>{{ skill.text }}</ion-label>
