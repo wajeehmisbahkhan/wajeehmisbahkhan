@@ -19,6 +19,8 @@ export class InfoService {
       new Skill('Industry', 'Web Development'),
       new Skill('Industry', 'Hybrid App Development'),
       new Skill('Industry', 'Native IOS Development'),
+      new Skill('Industry', 'Front End Development'),
+      new Skill('Industry', 'Back End Development'),
       new Skill('Industry', 'Cloud Computing'),
       new Skill('Industry', 'Artificial Intelligence'),
       new Skill('Industry', 'Machine Learning'),
@@ -129,5 +131,14 @@ export class InfoService {
     }
   }
 
-  initProjects() {}
+  initProjects() {
+    this.projects.push(
+      new Project(
+        'Dagra Manor',
+        'A CV Website',
+        'This website was created for...',
+        []
+      )
+    );
+  }
 }

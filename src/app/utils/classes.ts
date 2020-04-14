@@ -18,28 +18,28 @@ export class Skill {
 }
 
 export class Project {
-  pictureUrl: string;
   title: string;
   subtitle: string;
   description: string;
   skillsUsed: Array<Skill>;
+  pictureUrl?: string;
   viewUrl?: string;
   githubUrl?: string;
 
   constructor(
-    pictureUrl: string,
     title: string,
     subtitle: string,
     description: string,
     skillsUsed: Array<Skill>,
+    pictureUrl?: string,
     viewUrl?: string,
     githubUrl?: string
   ) {
-    this.pictureUrl = pictureUrl;
     this.title = title;
     this.subtitle = subtitle;
     this.description = description;
     this.skillsUsed = skillsUsed;
+    this.pictureUrl = pictureUrl;
     this.viewUrl = viewUrl;
     this.githubUrl = githubUrl;
   }
