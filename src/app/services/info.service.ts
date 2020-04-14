@@ -48,13 +48,33 @@ export class InfoService {
       ),
       new Skill('Language', 'HTML 5', '../../assets/icon/html5.png'),
       new Skill('Language', 'CSS 3', '../../assets/icon/css3.png'),
-      new Skill('Language', 'SASS', '../../assets/icon/sass.png'),
+      new Skill(
+        'Language',
+        'SASS',
+        '../../assets/icon/sass.png',
+        'https://sass-lang.com/'
+      ),
       new Skill('Language', 'JavaScript', '../../assets/icon/js.png'),
       new Skill('Language', 'TypeScript', '../../assets/icon/ts.png'),
-      new Skill('Language', 'Swift', '../../assets/icon/swift.png'),
+      new Skill(
+        'Language',
+        'Swift',
+        '../../assets/icon/swift.png',
+        'https://developer.apple.com/swift/'
+      ),
       new Skill('Language', 'C++', '../../assets/icon/c++.png'),
-      new Skill('Language', 'Java', '../../assets/icon/java.png'),
-      new Skill('Language', 'Python', '../../assets/icon/python.png'),
+      new Skill(
+        'Language',
+        'Java',
+        '../../assets/icon/java.png',
+        'https://www.java.com/'
+      ),
+      new Skill(
+        'Language',
+        'Python',
+        '../../assets/icon/python.png',
+        'https://www.python.org/'
+      ),
       new Skill(
         'Framework',
         'Angular',
