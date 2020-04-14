@@ -1,12 +1,19 @@
 export class Skill {
-  technology: string;
+  title: string;
   text: string;
-  url: string;
+  pictureUrl: string;
+  infoUrl: string;
 
-  constructor(technology: string, text: string, url: string) {
-    this.technology = technology;
+  constructor(
+    title: string,
+    text: string,
+    pictureUrl?: string,
+    infoUrl?: string
+  ) {
+    this.title = title;
     this.text = text;
-    this.url = url;
+    this.pictureUrl = pictureUrl;
+    this.infoUrl = infoUrl;
   }
 }
 
