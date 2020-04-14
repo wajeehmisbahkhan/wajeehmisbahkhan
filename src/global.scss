@@ -67,19 +67,19 @@ $screen-xl-min: 1200px;
 
 .left-spacing {
   @include md {
-    padding-left: 12vw;
+    margin-left: 12vw;
   }
   @include lg {
-    padding-left: 18vw;
+    margin-left: 18vw;
   }
 }
 
 .right-spacing {
   @include md {
-    padding-right: 12vw;
+    margin-right: 12vw;
   }
   @include lg {
-    padding-right: 18vw;
+    margin-right: 18vw;
   }
 }
 
