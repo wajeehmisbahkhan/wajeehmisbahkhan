@@ -40,7 +40,8 @@ export class InfoService {
       githubActions: new Skill(
         'Tool',
         'Github Actions',
-        '../../assets/icon/github_actions.png'
+        '../../assets/icon/github_actions.png',
+        'https://github.com/features/actions'
       ),
       firebase: new Skill(
         'Tool',
