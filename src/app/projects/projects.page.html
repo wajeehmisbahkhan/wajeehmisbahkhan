@@ -2,14 +2,11 @@
   <header></header>
 </ion-header>
 <ion-content>
-  <ion-text class="left-spacing right-spacing">
-    <ion-title>Projects</ion-title>
-    Text about the projects
-  </ion-text>
-  <ng-container
-    *ngFor="let project of projects"
-    class="left-spacing right-spacing"
-  >
+  <div class="left-spacing right-spacing ion-padding-vertical">
+    <ion-title class="ion-padding-vertical">Projects</ion-title>
+    <ion-text class="ion-padding">Text about the projects</ion-text>
+  </div>
+  <div *ngFor="let project of projects" class="left-spacing right-spacing">
     <ion-row>
       <!-- Picture -->
       <ion-col size="3">
@@ -17,7 +14,6 @@
           [src]="project.pictureUrl"
           [alt]="'Project: ' + project.title"
           width="100%"
-          height="100%"
         ></ion-img>
       </ion-col>
       <ion-col size="9">
@@ -43,6 +39,6 @@
         </ion-card>
       </ion-col>
     </ion-row>
-  </ng-container>
+  </div>
   <footer></footer>
 </ion-content>
