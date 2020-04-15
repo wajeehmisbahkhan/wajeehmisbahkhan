@@ -65,6 +65,12 @@ export class InfoService {
       ),
       js: new Skill('Language', 'JavaScript', '../../assets/icon/js.png'),
       ts: new Skill('Language', 'TypeScript', '../../assets/icon/ts.png'),
+      node: new Skill(
+        'Language',
+        'Node',
+        '../../assets/icon/node.png',
+        'https://nodejs.org/'
+      ),
       swift: new Skill(
         'Language',
         'Swift',
@@ -84,6 +90,12 @@ export class InfoService {
         '../../assets/icon/python.png',
         'https://www.python.org/'
       ),
+      bootstrap: new Skill(
+        'Framework',
+        'Bootstrap',
+        '../../assets/icon/bootstrap.png',
+        'https://getbootstrap.com/'
+      ),
       angular: new Skill(
         'Framework',
         'Angular',
@@ -101,6 +113,12 @@ export class InfoService {
         'Cordova',
         '../../assets/icon/cordova.png',
         'https://cordova.apache.org/'
+      ),
+      express: new Skill(
+        'Framework',
+        'Express',
+        '../../assets/icon/express.png',
+        'https://expressjs.com/'
       ),
       electron: new Skill(
         'Framework',
@@ -146,13 +164,96 @@ export class InfoService {
     this.projects.push(
       new Project(
         'Dagra Manor',
-        'A CV Website',
-        'This website was created for...',
+        'Interior Designing Website',
+        `DAGRA MANOR'S moto has been meek and modest in its very own exclusive way of Building, Remodeling and Constructing New Sites. This website was created for an interior designer as a way to provide a quick view of their services to customers.`,
         [
           this.skills.frontEndDevelopment,
           this.skills.html,
           this.skills.css,
           this.skills.js
+        ]
+      ),
+      new Project(
+        'Knowledge Inn Academy',
+        'Educational Website',
+        `Knowledge Inn Academy (KIA) is an institution and platform for higher learning dedicated to providing innovative undergraduate, postgraduate, and professional education. This website was created for a coaching center for a quick introduction to their services.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ]
+      ),
+      new Project(
+        'Misbah Khan & Associates',
+        'Construction Website',
+        'This website was created for a construction company for their introduction to interested customers.',
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ]
+      ),
+      new Project(
+        'Pangea Travels',
+        'Travel Agency Website',
+        `Pangea Travels is one of the leading Travel & Tour Operators and Destination Management Company in Karachi. This website was created for a travel agency to list their offers to interested travellers.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ]
+      ),
+      new Project(
+        'UBIT',
+        'Universal Bio-Informatics Tool',
+        'A Universal Bio-Informatics Tool for solving totally everyday problems.',
+        [this.skills.frontEndDevelopment, this.skills.cpp, this.skills.qt]
+      ),
+      new Project(
+        'PokeFAST',
+        'Pokemon in FAST (Uni)',
+        'A game centering around a freshman student at FAST University.',
+        [this.skills.frontEndDevelopment, this.skills.java]
+      ),
+      new Project(
+        'Calculus',
+        'Equations Visualizer',
+        'A website where you can write equations following the format provided and have the equation visualized.',
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ]
+      ),
+      new Project(
+        'KarCab',
+        'Complete Uber Clone',
+        'A mega project which was created...',
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.backEndDevelopment,
+          this.skills.angular,
+          this.skills.ionic,
+          this.skills.firebase,
+          this.skills.devops,
+          this.skills.githubActions
+        ]
+      ),
+      new Project(
+        'We Chat',
+        'Video Chat Room',
+        `A website where two people can join, contact each other and record each other's videos as well.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.bootstrap,
+          this.skills.backEndDevelopment,
+          this.skills.node,
+          this.skills.webrtc,
+          this.skills.devops
         ]
       )
     );

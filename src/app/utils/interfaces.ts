@@ -20,13 +20,16 @@ export interface Skills {
   sass: Skill;
   js: Skill;
   ts: Skill;
+  node: Skill;
   swift: Skill;
   cpp: Skill;
   java: Skill;
   python: Skill;
+  bootstrap: Skill;
   angular: Skill;
   ionic: Skill;
   cordova: Skill;
+  express: Skill;
   electron: Skill;
   capacitor: Skill;
   swiftui: Skill;
