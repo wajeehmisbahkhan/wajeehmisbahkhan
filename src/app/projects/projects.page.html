@@ -7,17 +7,17 @@
     <ion-text class="ion-padding">Text about the projects</ion-text>
   </div>
   <div *ngFor="let project of projects" class="left-spacing right-spacing">
-    <ion-row class="ion-align-items-center ion-margin-vertical card-container">
-      <!-- Picture -->
-      <ion-col class="ion-no-padding" size="3">
-        <ion-img
-          [src]="project.pictureUrl"
-          [alt]="'Project: ' + project.title"
-          width="100%"
-        ></ion-img>
-      </ion-col>
-      <ion-col class="ion-no-padding" size="9">
-        <ion-card class="ion-no-margin">
+    <ion-card>
+      <ion-row class="ion-align-items-center ion-margin-vertical">
+        <!-- Picture -->
+        <ion-col class="ion-padding-start" size="3">
+          <ion-img
+            [src]="project.pictureUrl"
+            [alt]="'Project: ' + project.title"
+            width="100%"
+          ></ion-img>
+        </ion-col>
+        <ion-col class="ion-no-padding" size="9">
           <ion-card-header>
             <ion-card-title>{{ project.title }}</ion-card-title>
           </ion-card-header>
@@ -65,9 +65,9 @@
               </ion-chip>
             </a>
           </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-card>
   </div>
   <footer></footer>
 </ion-content>
