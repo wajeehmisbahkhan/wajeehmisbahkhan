@@ -71,6 +71,12 @@ export class InfoService {
         '../../assets/icon/node.png',
         'https://nodejs.org/'
       ),
+      mongo: new Skill(
+        'Language',
+        'Mongo DB',
+        '../../assets/icon/mongo.png',
+        'https://www.mongodb.com/'
+      ),
       swift: new Skill(
         'Language',
         'Swift',

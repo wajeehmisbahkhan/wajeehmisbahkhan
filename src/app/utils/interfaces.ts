@@ -21,6 +21,7 @@ export interface Skills {
   js: Skill;
   ts: Skill;
   node: Skill;
+  mongo: Skill;
   swift: Skill;
   cpp: Skill;
   java: Skill;
