@@ -169,73 +169,6 @@ export class InfoService {
   initProjects() {
     this.projects.push(
       new Project(
-        'Dagra Manor',
-        'Interior Designing Website',
-        `DAGRA MANOR'S moto has been meek and modest in its very own exclusive way of Building, Remodeling and Constructing New Sites. This website was created for an interior designer as a way to provide a quick view of their services to customers.`,
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.html,
-          this.skills.css,
-          this.skills.js
-        ]
-      ),
-      new Project(
-        'Knowledge Inn Academy',
-        'Educational Website',
-        `Knowledge Inn Academy (KIA) is an institution and platform for higher learning dedicated to providing innovative undergraduate, postgraduate, and professional education. This website was created for a coaching center for a quick introduction to their services.`,
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.html,
-          this.skills.css,
-          this.skills.js
-        ]
-      ),
-      new Project(
-        'Misbah Khan & Associates',
-        'Construction Website',
-        'This website was created for a construction company for their introduction to interested customers.',
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.html,
-          this.skills.css,
-          this.skills.js
-        ]
-      ),
-      new Project(
-        'Pangea Travels',
-        'Travel Agency Website',
-        `Pangea Travels is one of the leading Travel & Tour Operators and Destination Management Company in Karachi. This website was created for a travel agency to list their offers to interested travellers.`,
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.html,
-          this.skills.css,
-          this.skills.js
-        ]
-      ),
-      new Project(
-        'UBIT',
-        'Universal Bio-Informatics Tool',
-        'A Universal Bio-Informatics Tool for solving totally everyday problems.',
-        [this.skills.frontEndDevelopment, this.skills.cpp, this.skills.qt]
-      ),
-      new Project(
-        'PokeFAST',
-        'Pokemon in FAST (Uni)',
-        'A game centering around a freshman student at FAST University.',
-        [this.skills.frontEndDevelopment, this.skills.java]
-      ),
-      new Project(
-        'Calculus',
-        'Equations Visualizer',
-        'A website where you can write equations following the format provided and have the equation visualized.',
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.html,
-          this.skills.css,
-          this.skills.js
-        ]
-      ),
-      new Project(
         'KarCab',
         'Complete Uber Clone',
         'A mega project which was created...',
@@ -250,6 +183,140 @@ export class InfoService {
         ]
       ),
       new Project(
+        'FCP',
+        'FAST CarPool',
+        `An application that keeps track of your financing.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.angular,
+          this.skills.ionic,
+          this.skills.backEndDevelopment,
+          this.skills.firebase
+        ],
+        '../../assets/img/fcp.png',
+        null,
+        'https://github.com/wajeehmisbahkhan/FASTCarPool/'
+      ),
+      new Project(
+        'FAST NUCES',
+        'Timetable Scheduler',
+        `An application that generates timetables using a genetic algorithm created specifically for FAST Karachi.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.angular,
+          this.skills.ionic,
+          this.skills.backEndDevelopment,
+          this.skills.firebase,
+          this.skills.artificialIntelligence,
+          this.skills.python
+        ],
+        '../../assets/img/fast-nuces.png',
+        'https://k173673.000webhostapp.com/fast-nuces/',
+        'https://github.com/wajeehmisbahkhan/FAST-NUCES/'
+      ),
+      new Project(
+        'Book Keeping',
+        'Financial Tracker',
+        `An application that keeps track of your financing.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.angular,
+          this.skills.ionic,
+          this.skills.backEndDevelopment,
+          this.skills.node,
+          this.skills.mongo
+        ],
+        '../../assets/img/bookkeeper.png',
+        null,
+        'https://github.com/telic-solutions/BookKeeping/'
+      ),
+      new Project(
+        'UBIT',
+        'Universal Bio-Informatics Tool',
+        'A Universal Bio-Informatics Tool for solving totally everyday problems.',
+        [this.skills.frontEndDevelopment, this.skills.cpp, this.skills.qt],
+        '../../assets/img/ubit.png',
+        null,
+        'https://github.com/wajeehmisbahkhan/UBIT'
+      ),
+      new Project(
+        'PokeFAST',
+        'Pokemon in FAST (Uni)',
+        'A game centering around a freshman student at FAST University.',
+        [this.skills.frontEndDevelopment, this.skills.java],
+        '../../assets/img/pokefast.png',
+        'https://youtu.be/3VDLvWxvL0U',
+        'https://github.com/wajeehmisbahkhan/PokeFAST'
+      ),
+      new Project(
+        'Dagra Manor',
+        'Interior Designing Website',
+        `DAGRA MANOR'S moto has been meek and modest in its very own exclusive way of Building, Remodeling and Constructing New Sites.
+        This website was created for an interior designer as a way to provide a quick view of their services to customers.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ],
+        '../../assets/img/dagramanor.png'
+      ),
+      new Project(
+        'Knowledge Inn Academy',
+        'Educational Website',
+        `Knowledge Inn Academy (KIA) is an institution and platform for higher learning dedicated to
+        providing innovative undergraduate, postgraduate, and professional education. This website was
+        created for a coaching center for a quick introduction to their services.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ],
+        '../../assets/img/kia.png',
+        'https://knowledgeinnacademy.com/',
+        'https://github.com/wajeehmisbahkhan/KnowledgeInnAcademy'
+      ),
+      new Project(
+        'Misbah Khan & Associates',
+        'Construction Website',
+        'This website was created for a construction company for their introduction to interested customers.',
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ],
+        '../../assets/img/mka.png'
+      ),
+      new Project(
+        'Pangea Travels',
+        'Travel Agency Website',
+        `Pangea Travels is one of the leading Travel & Tour Operators and Destination Management Company in Karachi.
+        This website was created for a travel agency to list their offers to interested travellers.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ],
+        '../../assets/img/pangea.png'
+      ),
+      new Project(
+        'Calculus',
+        'Equations Visualizer',
+        'A website created using p5.js where you can write equations following the format provided and have the equation visualized.',
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.html,
+          this.skills.css,
+          this.skills.js
+        ],
+        '../../assets/img/calculus.png',
+        'https://k173673.000webhostapp.com/cal/',
+        'https://github.com/wajeehmisbahkhan/calculus'
+      ),
+      new Project(
         'We Chat',
         'Video Chat Room',
         `A website where two people can join, contact each other and record each other's videos as well.`,
@@ -260,14 +327,14 @@ export class InfoService {
           this.skills.node,
           this.skills.webrtc,
           this.skills.devops
-        ]
+        ],
+        '../../assets/img/wechat.png',
+        'https://wajeehmisbahkhan.herokuapp.com/',
+        'https://github.com/wajeehmisbahkhan/WebRTC'
       )
     );
     for (const project of this.projects) {
       // Info urls
-      if (!project.viewUrl) {
-        project.viewUrl = `https://www.google.com/search?q=${project.title}`;
-      }
       if (!project.pictureUrl) {
         project.pictureUrl = `https://ui-avatars.com/api/?name=${project.title}`;
       }
