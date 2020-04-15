@@ -278,6 +278,22 @@ export class InfoService {
         'https://github.com/wajeehmisbahkhan/KnowledgeInnAcademy'
       ),
       new Project(
+        'We Chat',
+        'Video Chat Room',
+        `A website where two people can join, contact each other and record each other's videos as well.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.bootstrap,
+          this.skills.backEndDevelopment,
+          this.skills.node,
+          this.skills.webrtc,
+          this.skills.devops
+        ],
+        '../../assets/img/wechat.png',
+        'https://wajeehmisbahkhan.herokuapp.com/',
+        'https://github.com/wajeehmisbahkhan/WebRTC'
+      ),
+      new Project(
         'Misbah Khan & Associates',
         'Construction Website',
         'This website was created for a construction company for their introduction to interested customers.',
@@ -315,22 +331,6 @@ export class InfoService {
         '../../assets/img/calculus.png',
         'https://k173673.000webhostapp.com/cal/',
         'https://github.com/wajeehmisbahkhan/calculus'
-      ),
-      new Project(
-        'We Chat',
-        'Video Chat Room',
-        `A website where two people can join, contact each other and record each other's videos as well.`,
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.bootstrap,
-          this.skills.backEndDevelopment,
-          this.skills.node,
-          this.skills.webrtc,
-          this.skills.devops
-        ],
-        '../../assets/img/wechat.png',
-        'https://wajeehmisbahkhan.herokuapp.com/',
-        'https://github.com/wajeehmisbahkhan/WebRTC'
       )
     );
     for (const project of this.projects) {
