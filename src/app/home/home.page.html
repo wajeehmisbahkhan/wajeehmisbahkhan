@@ -21,14 +21,16 @@
   <!-- Skills -->
   <ion-card class="ion-margin left-spacing right-spacing">
     <ion-card-header class="ion-text-center">
-      <ion-card-title>Skills</ion-card-title>
+      <ion-card-title>
+        <h1>Skills</h1>
+      </ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-row
         *ngFor="let skillTitle of skillTitles"
         class="ion-margin-vertical"
       >
-        <ion-col size="12" class="ion-text-center">
+        <ion-col size="12" class="ion-text-center ion-margin-bottom">
           <h1>{{ skillTitle }}</h1>
         </ion-col>
         <ion-col
