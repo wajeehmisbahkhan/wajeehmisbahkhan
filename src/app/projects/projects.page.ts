@@ -13,13 +13,13 @@ export class ProjectsPage implements OnInit {
   ngOnInit() {}
 
   getSkillColor(skill: Skill) {
-    if (skill.title === 'Industry') {
+    if (skill.title === 'Language') {
       return 'primary';
-    } else if (skill.title === 'Tool') {
-      return 'secondary';
     } else if (skill.title === 'Framework') {
+      return 'secondary';
+    } else if (skill.title === 'Tool') {
       return 'tertiary';
-    } else if (skill.title === 'Language') {
+    } else if (skill.title === 'Industry') {
       return 'warning';
     }
     return 'danger';
