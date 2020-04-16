@@ -12,14 +12,8 @@ export class HomePage {
   skillTitles: Array<SkillTitle>;
   skills: Array<Skill>;
   constructor(private info: InfoService) {
-    this.skills = [];
-    const unorderedSkills = Object.values(this.info.skills);
+    this.skills = Object.values(this.info.skills);
     // Arrangement
     this.skillTitles = ['Industry', 'Language', 'Framework', 'Tool'];
-    this.skills = unorderedSkills.sort((a, b) =>
-      this.skillTitles.indexOf(a.title) > this.skillTitles.indexOf(b.title)
-        ? 1
-        : -1
-    );
   }
 }
