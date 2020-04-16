@@ -31,24 +31,26 @@
         <ion-col size="12" class="ion-text-center">
           <h1>{{ skillTitle }}</h1>
         </ion-col>
-        <ng-container *ngFor="let skill of skills">
-          <ion-col *ngIf="skill.title === skillTitle" size="6" size-md="3">
-            <ion-row class="ion-align-items-center">
-              <ion-col size="3">
-                <ion-img
-                  [src]="skill.pictureUrl"
-                  [alt]="skill.text"
-                  style="height: 32px;"
-                ></ion-img>
-              </ion-col>
-              <ion-col size="9">
-                <a [href]="skill.infoUrl" target="_blank" class="nostyle">
-                  <ion-text>{{ skill.text }}</ion-text>
-                </a>
-              </ion-col>
-            </ion-row>
-          </ion-col>
-        </ng-container>
+        <ion-col
+          *ngFor="let skill of getSkillsByTitle(skillTitle)"
+          size="6"
+          size-md="3"
+        >
+          <ion-row class="ion-align-items-center">
+            <ion-col size="3">
+              <ion-img
+                [src]="skill.pictureUrl"
+                [alt]="skill.text"
+                style="height: 32px;"
+              ></ion-img>
+            </ion-col>
+            <ion-col size="9">
+              <a [href]="skill.infoUrl" target="_blank" class="nostyle">
+                <ion-text>{{ skill.text }}</ion-text>
+              </a>
+            </ion-col>
+          </ion-row>
+        </ion-col>
       </ion-row>
     </ion-card-content>
   </ion-card>

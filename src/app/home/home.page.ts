@@ -16,4 +16,8 @@ export class HomePage {
     // Arrangement
     this.skillTitles = ['Language', 'Framework', 'Tool', 'Industry'];
   }
+
+  getSkillsByTitle(title: SkillTitle) {
+    return this.skills.filter(skill => skill.title === title);
+  }
 }
