@@ -14,6 +14,6 @@ export class HomePage {
   constructor(private info: InfoService) {
     this.skills = Object.values(this.info.skills);
     // Arrangement
-    this.skillTitles = ['Industry', 'Language', 'Framework', 'Tool'];
+    this.skillTitles = ['Language', 'Framework', 'Tool', 'Industry'];
   }
 }
