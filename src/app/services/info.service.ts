@@ -135,7 +135,7 @@ export class InfoService {
       capacitor: new Skill(
         'Framework',
         'Capacitor',
-        '../../assets/icon/capcitor.png',
+        '../../assets/icon/capacitor.png',
         'https://capacitor.ionicframework.com/'
       ),
       swiftui: new Skill(
