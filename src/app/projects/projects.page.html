@@ -2,9 +2,22 @@
   <header></header>
 </ion-header>
 <ion-content>
-  <div class="left-spacing right-spacing ion-padding-vertical">
-    <ion-title class="ion-padding-vertical">Projects</ion-title>
-    <ion-text class="ion-padding">Text about the projects</ion-text>
+  <div class="left-spacing right-spacing ion-padding">
+    <ion-title class="ion-padding-vertical ion-text-center">
+      <h1>Projects</h1>
+    </ion-title>
+    <ion-text
+      >This is a non-comprehensive list of projects I have worked over they
+      years. If you have any questions about a particular project, you can
+      <a
+        class="nostyle"
+        [routerLink]="['/', 'contact-me']"
+        routerDirection="root"
+      >
+        <ion-text color="warning">contact me</ion-text>
+      </a>
+      and get more info.</ion-text
+    >
   </div>
   <div *ngFor="let project of projects" class="left-spacing right-spacing">
     <ion-card>

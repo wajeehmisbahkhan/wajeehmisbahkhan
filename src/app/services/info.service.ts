@@ -168,72 +168,49 @@ export class InfoService {
 
   initProjects() {
     this.projects.push(
-      new Project(
-        'KarCab',
-        'Complete Uber Clone',
-        'A mega project which was created...',
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.backEndDevelopment,
-          this.skills.angular,
-          this.skills.ionic,
-          this.skills.firebase,
-          this.skills.devops,
-          this.skills.githubActions
-        ]
-      ),
+      // new Project(
+      //   'KarCab',
+      //   'Complete Uber Clone',
+      //   'An ongoing project which was created...',
+      //   [
+      //     this.skills.frontEndDevelopment,
+      //     this.skills.backEndDevelopment,
+      //     this.skills.angular,
+      //     this.skills.ionic,
+      //     this.skills.firebase,
+      //     this.skills.devops,
+      //     this.skills.githubActions
+      //   ]
+      // ),
       new Project(
         'FCP',
         'FAST CarPool',
-        `An application that keeps track of your financing.`,
+        `An application that allows students to carpool to get to
+        FAST University, Karachi. It helps students find other students who
+        share similar routes and enables them to contact each other and
+        commute together.`,
         [
           this.skills.frontEndDevelopment,
+          this.skills.sass,
+          this.skills.ts,
           this.skills.angular,
           this.skills.ionic,
           this.skills.backEndDevelopment,
-          this.skills.firebase
+          this.skills.firebase,
+          this.skills.hybridDevelopment,
+          this.skills.cordova
         ],
         '../../assets/img/fcp.png',
         null,
         'https://github.com/wajeehmisbahkhan/FASTCarPool/'
       ),
       new Project(
-        'FAST NUCES',
-        'Timetable Scheduler',
-        `An application that generates timetables using a genetic algorithm created specifically for FAST Karachi.`,
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.angular,
-          this.skills.ionic,
-          this.skills.backEndDevelopment,
-          this.skills.firebase,
-          this.skills.artificialIntelligence,
-          this.skills.python
-        ],
-        '../../assets/img/fast-nuces.png',
-        'https://k173673.000webhostapp.com/fast-nuces/',
-        'https://github.com/wajeehmisbahkhan/FAST-NUCES/'
-      ),
-      new Project(
-        'Book Keeping',
-        'Financial Tracker',
-        `An application that keeps track of your financing.`,
-        [
-          this.skills.frontEndDevelopment,
-          this.skills.angular,
-          this.skills.ionic,
-          this.skills.backEndDevelopment,
-          this.skills.node,
-          this.skills.mongo
-        ],
-        '../../assets/img/bookkeeper.png',
-        null,
-        'https://github.com/telic-solutions/BookKeeping/'
-      ),
-      new Project(
         'UBIT',
         'Universal Bio-Informatics Tool',
-        'A Universal Bio-Informatics Tool for solving totally everyday problems.',
+        `A Universal Bio-Informatics Tool for solving
+        totally everyday problems. It consists of different
+        tools such as global/local alignment and calculating
+        the levenshtein distance between two DNA strands.`,
         [this.skills.frontEndDevelopment, this.skills.cpp, this.skills.qt],
         '../../assets/img/ubit.png',
         null,
@@ -242,11 +219,58 @@ export class InfoService {
       new Project(
         'PokeFAST',
         'Pokemon in FAST (Uni)',
-        'A game centering around a freshman student at FAST University.',
+        `A game centering around a freshman student at FAST University.
+        It consists of battles with seniors and teachers. Once the first
+        year is cleared, you are promoted to a sophomore where the game ends.`,
         [this.skills.frontEndDevelopment, this.skills.java],
         '../../assets/img/pokefast.png',
         'https://youtu.be/3VDLvWxvL0U',
         'https://github.com/wajeehmisbahkhan/PokeFAST'
+      ),
+      new Project(
+        'FAST NUCES',
+        'Timetable Scheduler',
+        `An application that generates timetables using a genetic algorithm created specifically for FAST Karachi.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.sass,
+          this.skills.ts,
+          this.skills.angular,
+          this.skills.ionic,
+          this.skills.backEndDevelopment,
+          this.skills.firebase,
+          this.skills.artificialIntelligence,
+          this.skills.python,
+          this.skills.hybridDevelopment,
+          this.skills.capacitor
+        ],
+        '../../assets/img/fast-nuces.png',
+        'https://k173673.000webhostapp.com/fast-nuces/',
+        'https://github.com/wajeehmisbahkhan/FAST-NUCES/'
+      ),
+      new Project(
+        'Book Keeping',
+        'Financial Tracker',
+        `An application that keeps track of your financing.
+        It also replicates the firestore method of keeping
+        websocket connections in order to get live documents
+        or collections.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.sass,
+          this.skills.ts,
+          this.skills.angular,
+          this.skills.ionic,
+          this.skills.backEndDevelopment,
+          this.skills.node,
+          this.skills.mongo,
+          this.skills.hybridDevelopment,
+          this.skills.cordova,
+          this.skills.electron
+        ],
+        '../../assets/img/bookkeeper.png',
+        null,
+        'https://github.com/telic-solutions/BookKeeping/'
       ),
       new Project(
         'Dagra Manor',
@@ -284,6 +308,7 @@ export class InfoService {
         [
           this.skills.frontEndDevelopment,
           this.skills.bootstrap,
+          this.skills.js,
           this.skills.backEndDevelopment,
           this.skills.node,
           this.skills.webrtc,
