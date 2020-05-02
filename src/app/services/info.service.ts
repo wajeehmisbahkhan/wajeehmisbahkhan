@@ -168,20 +168,28 @@ export class InfoService {
 
   initProjects() {
     this.projects.push(
-      // new Project(
-      //   'KarCab',
-      //   'Complete Uber Clone',
-      //   'An ongoing project which was created...',
-      //   [
-      //     this.skills.frontEndDevelopment,
-      //     this.skills.backEndDevelopment,
-      //     this.skills.angular,
-      //     this.skills.ionic,
-      //     this.skills.firebase,
-      //     this.skills.devops,
-      //     this.skills.githubActions
-      //   ]
-      // ),
+      new Project(
+        'KAdmin',
+        'Complete Uber Clone (Admin Panel)',
+        `An ongoing project which is intended to behave like Uber/Careem. The
+        admin panel for this application has been created to be cross platform and
+        easily accessible from desktop or mobile devices for different admin roles
+        such as support manager, marketing manager and super administrator.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.sass,
+          this.skills.ts,
+          this.skills.angular,
+          this.skills.ionic,
+          this.skills.backEndDevelopment,
+          this.skills.firebase,
+          this.skills.hybridDevelopment,
+          this.skills.capacitor,
+          this.skills.devops,
+          this.skills.githubActions
+        ],
+        '../../assets/img/kadmin.png'
+      ),
       new Project(
         'FCP',
         'FAST CarPool',
