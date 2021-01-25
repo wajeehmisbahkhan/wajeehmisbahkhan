@@ -3,38 +3,57 @@
 </ion-header>
 <ion-content>
   <!-- Introduction -->
-  <ion-card class="ion-padding ion-margin left-spacing right-spacing">
+  <ion-card class="ion-padding left-spacing right-spacing" class="reading-container">
     <ion-card-header>
-      <ion-card-title>
-        Hello, I'm <ion-text color="warning">Wajeeh</ion-text> - a full stack
-        Web and Mobile Developer
+      <ion-card-title class="ion-text-center">
+        Hello, I'm <ion-text color="warning">Wajeeh</ion-text> - a Full Stack App Developer
       </ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-card-subtitle>
-        I am a programming enthusiast and I've been coding small games from back
-        in 2012. I learned JavaScript back then as well and have been
-        professionally working in the field of Web Development since 2017.
+        <p class="ion-padding-bottom">
+          I am a coding enthusiast and I've been hacking together small programs such as games and websites from back in 2012. I
+          started learning JavaScript back then as well and have been professionally working in the field of App Development
+          (mainly web) since 2017 after getting into college. During this time, I mostly focused on developing landing pages and
+          small websites.
+        </p>
+        <p>
+          I started developing applications in Angular and Ionic in 2018. Since then, I have worked on many single page
+          applications and produced cross platform applications which work on Desktop, Android, iOS and PWA. I also started
+          learning many backend technologies as well such as Node, Express and MongoDB. My college classes complimented my online
+          learning and I have been able to develop complete solutions for different problems using my skills as a Full Stack
+          Developer.
+        </p>
       </ion-card-subtitle>
     </ion-card-content>
   </ion-card>
   <!-- Skills -->
-  <ion-card class="ion-margin left-spacing right-spacing">
+  <ion-card class="ion-margin left-spacing right-spacing reading-container">
     <ion-card-header class="ion-text-center">
       <ion-card-title>
-        <h1>Skills</h1>
+        <h1>Skills & Education</h1>
       </ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <ion-card-subtitle>
+        <p class="ion-padding-bottom">
+          My skill set is quite diverse as I have learned by myself through the Internet but also through my college courses. My
+          skills can be broken down into the general categories of Industries, Tools, Languages and Frameworks that I have learned
+          and went through over the years.
+        </p>
+      </ion-card-subtitle>
       <ion-row
-        *ngFor="let skillTitle of skillTitles"
+        *ngFor="let skill of skillMaterial"
         class="ion-margin-vertical"
       >
-        <ion-col size="12" class="ion-text-center ion-margin-bottom">
-          <h1>{{ skillTitle }}</h1>
+        <ion-col size="12" class="ion-margin-bottom">
+          <h1 class="ion-text-center">{{ skill.title }}</h1>
+          <p class="ion-padding-vertical">
+            {{ skill.content }}
+          </p>
         </ion-col>
         <ion-col
-          *ngFor="let skill of getSkillsByTitle(skillTitle)"
+          *ngFor="let skill of getSkillsByTitle(skill.title)"
           size="6"
           size-md="3"
         >

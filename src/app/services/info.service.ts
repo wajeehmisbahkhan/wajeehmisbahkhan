@@ -21,7 +21,8 @@ export class InfoService {
       nativeIosDevelopment: new Skill('Industry', 'Native IOS Development'),
       frontEndDevelopment: new Skill('Industry', 'Front End Development'),
       backEndDevelopment: new Skill('Industry', 'Back End Development'),
-      cloudComputing: new Skill('Industry', 'Cloud Computing'),
+      blockChain: new Skill('Industry', 'Block Chain'),
+      cryptoCurrency: new Skill('Industry', 'Crypto Currency'),
       artificialIntelligence: new Skill('Industry', 'Artificial Intelligence'),
       machineLearning: new Skill('Industry', 'Machine Learning'),
       devops: new Skill('Industry', 'DevOps'),
@@ -49,6 +50,12 @@ export class InfoService {
         'assets/icon/firebase.png',
         'https://firebase.google.com/'
       ),
+      cypress: new Skill(
+        'Tool',
+        'Cypress',
+        'assets/icon/cypress.png',
+        'https://cypress.io/'
+      ),
       webrtc: new Skill(
         'Tool',
         'WebRTC',
@@ -75,7 +82,7 @@ export class InfoService {
         'Language',
         'Mongo DB',
         'assets/icon/mongo.png',
-        'https://www.mongodb.com/'
+        'https://mongodb.com/'
       ),
       swift: new Skill(
         'Language',
@@ -88,13 +95,25 @@ export class InfoService {
         'Language',
         'Java',
         'assets/icon/java.png',
-        'https://www.java.com/'
+        'https://java.com/'
       ),
       python: new Skill(
         'Language',
         'Python',
         'assets/icon/python.png',
-        'https://www.python.org/'
+        'https://python.org/'
+      ),
+      dart: new Skill(
+        'Language',
+        'Dart',
+        'assets/icon/dart.png',
+        'https://dart.dev/'
+      ),
+      flutter: new Skill(
+        'Framework',
+        'Flutter',
+        'assets/icon/flutter.png',
+        'https://flutter.dev/'
       ),
       bootstrap: new Skill(
         'Framework',
@@ -130,7 +149,7 @@ export class InfoService {
         'Framework',
         'Electron',
         'assets/icon/electron.png',
-        'https://www.electronjs.org/'
+        'https://electronjs.org/'
       ),
       capacitor: new Skill(
         'Framework',
@@ -144,19 +163,14 @@ export class InfoService {
         'assets/icon/swiftui.png',
         'https://developer.apple.com/xcode/swiftui/'
       ),
-      qt: new Skill(
-        'Framework',
-        'QT',
-        'assets/icon/qt.png',
-        'https://www.qt.io/'
-      )
+      qt: new Skill('Framework', 'QT', 'assets/icon/qt.png', 'https://qt.io/')
     };
     for (const skill of Object.keys(this.skills)) {
       // Info urls
       if (!this.skills[skill].infoUrl) {
         this.skills[
           skill
-        ].infoUrl = `https://www.google.com/search?q=${this.skills[skill].text}`;
+        ].infoUrl = `https://google.com/search?q=${this.skills[skill].text}`;
       }
       if (!this.skills[skill].pictureUrl) {
         this.skills[

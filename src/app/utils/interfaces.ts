@@ -6,7 +6,8 @@ export interface Skills {
   nativeIosDevelopment: Skill;
   frontEndDevelopment: Skill;
   backEndDevelopment: Skill;
-  cloudComputing: Skill;
+  blockChain: Skill;
+  cryptoCurrency: Skill;
   devops: Skill;
   artificialIntelligence: Skill;
   machineLearning: Skill;
@@ -15,6 +16,7 @@ export interface Skills {
   githubActions: Skill;
   firebase: Skill;
   webrtc: Skill;
+  cypress: Skill;
   html: Skill;
   css: Skill;
   sass: Skill;
@@ -26,6 +28,8 @@ export interface Skills {
   cpp: Skill;
   java: Skill;
   python: Skill;
+  dart: Skill;
+  flutter: Skill;
   bootstrap: Skill;
   angular: Skill;
   ionic: Skill;
