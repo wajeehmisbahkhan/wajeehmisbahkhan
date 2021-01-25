@@ -28,126 +28,126 @@ export class InfoService {
       git: new Skill(
         'Tool',
         'Git',
-        '../../assets/icon/git.png',
+        'assets/icon/git.png',
         'https://git-scm.com/'
       ),
       github: new Skill(
         'Tool',
         'Github',
-        '../../assets/icon/github.png',
+        'assets/icon/github.png',
         'https://github.com/'
       ),
       githubActions: new Skill(
         'Tool',
         'Github Actions',
-        '../../assets/icon/github_actions.png',
+        'assets/icon/github_actions.png',
         'https://github.com/features/actions'
       ),
       firebase: new Skill(
         'Tool',
         'Firebase',
-        '../../assets/icon/firebase.png',
+        'assets/icon/firebase.png',
         'https://firebase.google.com/'
       ),
       webrtc: new Skill(
         'Tool',
         'WebRTC',
-        '../../assets/icon/webrtc.png',
+        'assets/icon/webrtc.png',
         'https://webrtc.org/'
       ),
-      html: new Skill('Language', 'HTML 5', '../../assets/icon/html5.png'),
-      css: new Skill('Language', 'CSS 3', '../../assets/icon/css3.png'),
+      html: new Skill('Language', 'HTML 5', 'assets/icon/html5.png'),
+      css: new Skill('Language', 'CSS 3', 'assets/icon/css3.png'),
       sass: new Skill(
         'Language',
         'SASS',
-        '../../assets/icon/sass.png',
+        'assets/icon/sass.png',
         'https://sass-lang.com/'
       ),
-      js: new Skill('Language', 'JavaScript', '../../assets/icon/js.png'),
-      ts: new Skill('Language', 'TypeScript', '../../assets/icon/ts.png'),
+      js: new Skill('Language', 'JavaScript', 'assets/icon/js.png'),
+      ts: new Skill('Language', 'TypeScript', 'assets/icon/ts.png'),
       node: new Skill(
         'Language',
         'Node',
-        '../../assets/icon/node.png',
+        'assets/icon/node.png',
         'https://nodejs.org/'
       ),
       mongo: new Skill(
         'Language',
         'Mongo DB',
-        '../../assets/icon/mongo.png',
+        'assets/icon/mongo.png',
         'https://www.mongodb.com/'
       ),
       swift: new Skill(
         'Language',
         'Swift',
-        '../../assets/icon/swift.png',
+        'assets/icon/swift.png',
         'https://developer.apple.com/swift/'
       ),
-      cpp: new Skill('Language', 'C++', '../../assets/icon/c++.png'),
+      cpp: new Skill('Language', 'C++', 'assets/icon/c++.png'),
       java: new Skill(
         'Language',
         'Java',
-        '../../assets/icon/java.png',
+        'assets/icon/java.png',
         'https://www.java.com/'
       ),
       python: new Skill(
         'Language',
         'Python',
-        '../../assets/icon/python.png',
+        'assets/icon/python.png',
         'https://www.python.org/'
       ),
       bootstrap: new Skill(
         'Framework',
         'Bootstrap',
-        '../../assets/icon/bootstrap.png',
+        'assets/icon/bootstrap.png',
         'https://getbootstrap.com/'
       ),
       angular: new Skill(
         'Framework',
         'Angular',
-        '../../assets/icon/angular.png',
+        'assets/icon/angular.png',
         'https://angular.io/'
       ),
       ionic: new Skill(
         'Framework',
         'Ionic',
-        '../../assets/icon/ionic.png',
+        'assets/icon/ionic.png',
         'https://ionicframework.com/'
       ),
       cordova: new Skill(
         'Framework',
         'Cordova',
-        '../../assets/icon/cordova.png',
+        'assets/icon/cordova.png',
         'https://cordova.apache.org/'
       ),
       express: new Skill(
         'Framework',
         'Express',
-        '../../assets/icon/express.png',
+        'assets/icon/express.png',
         'https://expressjs.com/'
       ),
       electron: new Skill(
         'Framework',
         'Electron',
-        '../../assets/icon/electron.png',
+        'assets/icon/electron.png',
         'https://www.electronjs.org/'
       ),
       capacitor: new Skill(
         'Framework',
         'Capacitor',
-        '../../assets/icon/capacitor.png',
+        'assets/icon/capacitor.png',
         'https://capacitor.ionicframework.com/'
       ),
       swiftui: new Skill(
         'Framework',
         'Swift UI',
-        '../../assets/icon/swiftui.png',
+        'assets/icon/swiftui.png',
         'https://developer.apple.com/xcode/swiftui/'
       ),
       qt: new Skill(
         'Framework',
         'QT',
-        '../../assets/icon/qt.png',
+        'assets/icon/qt.png',
         'https://www.qt.io/'
       )
     };
@@ -188,7 +188,7 @@ export class InfoService {
           this.skills.devops,
           this.skills.githubActions
         ],
-        '../../assets/img/kadmin.png'
+        'assets/img/kadmin.png'
       ),
       new Project(
         'FCP',
@@ -208,7 +208,7 @@ export class InfoService {
           this.skills.hybridDevelopment,
           this.skills.cordova
         ],
-        '../../assets/img/fcp.png',
+        'assets/img/fcp.png',
         null,
         'https://github.com/wajeehmisbahkhan/FASTCarPool/'
       ),
@@ -220,7 +220,7 @@ export class InfoService {
         tools such as global/local alignment and calculating
         the levenshtein distance between two DNA strands.`,
         [this.skills.frontEndDevelopment, this.skills.cpp, this.skills.qt],
-        '../../assets/img/ubit.png',
+        'assets/img/ubit.png',
         null,
         'https://github.com/wajeehmisbahkhan/UBIT'
       ),
@@ -231,7 +231,7 @@ export class InfoService {
         It consists of battles with seniors and teachers. Once the first
         year is cleared, you are promoted to a sophomore where the game ends.`,
         [this.skills.frontEndDevelopment, this.skills.java],
-        '../../assets/img/pokefast.png',
+        'assets/img/pokefast.png',
         'https://youtu.be/3VDLvWxvL0U',
         'https://github.com/wajeehmisbahkhan/PokeFAST'
       ),
@@ -252,7 +252,7 @@ export class InfoService {
           this.skills.hybridDevelopment,
           this.skills.capacitor
         ],
-        '../../assets/img/fast-nuces.png',
+        'assets/img/fast-nuces.png',
         'https://k173673.000webhostapp.com/fast-nuces/',
         'https://github.com/wajeehmisbahkhan/FAST-NUCES/'
       ),
@@ -276,7 +276,7 @@ export class InfoService {
           this.skills.cordova,
           this.skills.electron
         ],
-        '../../assets/img/bookkeeper.png',
+        'assets/img/bookkeeper.png',
         null,
         'https://github.com/telic-solutions/BookKeeping/'
       ),
@@ -291,7 +291,7 @@ export class InfoService {
           this.skills.css,
           this.skills.js
         ],
-        '../../assets/img/dagramanor.png'
+        'assets/img/dagramanor.png'
       ),
       new Project(
         'Knowledge Inn Academy',
@@ -305,7 +305,7 @@ export class InfoService {
           this.skills.css,
           this.skills.js
         ],
-        '../../assets/img/kia.png',
+        'assets/img/kia.png',
         'https://knowledgeinnacademy.com/',
         'https://github.com/wajeehmisbahkhan/KnowledgeInnAcademy'
       ),
@@ -322,7 +322,7 @@ export class InfoService {
           this.skills.webrtc,
           this.skills.devops
         ],
-        '../../assets/img/wechat.png',
+        'assets/img/wechat.png',
         'https://wajeehmisbahkhan.herokuapp.com/',
         'https://github.com/wajeehmisbahkhan/WebRTC'
       ),
@@ -336,7 +336,7 @@ export class InfoService {
           this.skills.css,
           this.skills.js
         ],
-        '../../assets/img/mka.png'
+        'assets/img/mka.png'
       ),
       new Project(
         'Pangea Travels',
@@ -349,7 +349,7 @@ export class InfoService {
           this.skills.css,
           this.skills.js
         ],
-        '../../assets/img/pangea.png'
+        'assets/img/pangea.png'
       ),
       new Project(
         'Calculus',
@@ -361,7 +361,7 @@ export class InfoService {
           this.skills.css,
           this.skills.js
         ],
-        '../../assets/img/calculus.png',
+        'assets/img/calculus.png',
         'https://k173673.000webhostapp.com/cal/',
         'https://github.com/wajeehmisbahkhan/calculus'
       )
