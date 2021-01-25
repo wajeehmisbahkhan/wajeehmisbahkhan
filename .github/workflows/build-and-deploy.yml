@@ -12,7 +12,7 @@ jobs:
       - name: Get latest commit
         uses: actions/checkout@v2.0.0
       - name: Install Node
-        uses: actions/setup-node@v1.1.0
+        uses: actions/setup-node@v2
       - name: Install Dependencies
         run: npm install
       - name: Create environment file
