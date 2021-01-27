@@ -74,6 +74,9 @@
               class="nostyle"
             >
               <ion-chip [color]="getSkillColor(skill)">
+                <ion-avatar>
+                  <img [src]="skill.pictureUrl">
+                </ion-avatar>
                 <ion-label>{{ skill.text }}</ion-label>
               </ion-chip>
             </a>
