@@ -62,6 +62,12 @@ export class InfoService {
         'assets/icon/webrtc.png',
         'https://webrtc.org/'
       ),
+      stripe: new Skill(
+        'Tool',
+        'Stripe',
+        'assets/icon/stripe.png',
+        'https://stripe.com/'
+      ),
       html: new Skill('Language', 'HTML 5', 'assets/icon/html5.png'),
       css: new Skill('Language', 'CSS 3', 'assets/icon/css3.png'),
       sass: new Skill(
@@ -182,6 +188,28 @@ export class InfoService {
 
   initProjects() {
     this.projects.push(
+      new Project(
+        'Virtual CEO',
+        'Subscription Based Web Application',
+        `Now more than ever, we're seeing an industry shift in the way
+        we work. Gone are the days where you need an office and a team
+        of staff in order to run a company. Virtual CEO is a
+        subscription-based platform, allowing business owners and
+        entrepreneurs to hire their marketing, sales or tech departments
+        on subscription online.`,
+        [
+          this.skills.frontEndDevelopment,
+          this.skills.sass,
+          this.skills.ts,
+          this.skills.angular,
+          this.skills.backEndDevelopment,
+          this.skills.firebase,
+          this.skills.stripe,
+          this.skills.githubActions
+        ],
+        'assets/img/vceo.png',
+        'https://virtualceo-io.web.app'
+      ),
       new Project(
         'KAdmin',
         'Complete Uber Clone (Admin Panel)',

@@ -16,6 +16,7 @@ export interface Skills {
   githubActions: Skill;
   firebase: Skill;
   webrtc: Skill;
+  stripe: Skill;
   cypress: Skill;
   html: Skill;
   css: Skill;
