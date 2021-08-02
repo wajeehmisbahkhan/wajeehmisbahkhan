@@ -6,7 +6,7 @@
   <a href="https://linkedin.com/in/WajeehMisbahKhan"><img height="30" src="https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>&nbsp;&nbsp;
   <a href="https://upwork.com/freelancers/~01607bfc54f372b2a3"><img height="30" src="https://img.shields.io/badge/-UPWORK-73bb44?style=for-the-badge&logo=upwork&logoColor=white"></a>&nbsp;&nbsp;
   <a href="https://fiverr.com/users/wajeeh_"><img height="30" src="https://img.shields.io/badge/-FIVERR-00b22d?style=for-the-badge&logo=fiverr&logoColor=white"></a>&nbsp;&nbsp;
-  <a href="https://www.facebook.com/trinnwin"><img height="30" src="https://img.shields.io/badge/-People Per Hour-ee7200?style=for-the-badge&logoColor=white"></a>&nbsp;&nbsp;
+  <a href="https://www.peopleperhour.com/freelancer/technology-programming/wajeeh-khan-mean-stack-developer-with-firebase-zmmwyqq"><img height="30" src="https://img.shields.io/badge/-People Per Hour-ee7200?style=for-the-badge&logoColor=white"></a>&nbsp;&nbsp;
   <a href="https://github.com/wajeehmisbahkhan"><img height="30" src="https://img.shields.io/badge/-GITHUB-333?style=for-the-badge&logo=github&logoColor=white"></a>&nbsp;&nbsp;
 </p>
 <div align="center">
