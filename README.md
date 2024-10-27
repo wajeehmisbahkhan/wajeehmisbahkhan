@@ -10,7 +10,7 @@
   <a href="https://github.com/wajeehmisbahkhan"><img height="30" src="https://img.shields.io/badge/-GITHUB-333?style=for-the-badge&logo=github&logoColor=white"></a>&nbsp;&nbsp;
 </p>
 <div align="center">
-<h3>😠 &nbsp;MEAN Developer from Pakistan 🇵🇰</h3>
+<h3>Tech Entrepreneur | Product Engineer | Technical Advisor/Consultant</h3>
 </div>
 <br />
 <div align="center">
@@ -18,18 +18,32 @@
 </div>
 <br />
 <div align="left">
-  <h1>Introduction 🎬</h1>
+  <h2>Introduction 🎬</h2>
   <p>
-    I am a coding enthusiast and I've been hacking together small programs such as games and websites from back in 2012. I started learning JavaScript back then as well and have been professionally working in the field of App Development (mainly web) since 2017 after getting into college. During this time, I mostly focused on developing landing pages and small websites.
+    Hi, I’m Wajeeh, a Tech Entrepreneur and Full Stack Developer with extensive experience spanning over 5 years in developing robust, scalable web and mobile applications. My career is characterized by my role as a Product Engineer and Technical Advisor, where I lead strategic project development and provide technical consultation across various platforms.
   </p>
-  <h1>Background ✨</h1>
+  <h2>Background ✨</h2>
   <p>
-    I started developing applications in Angular and Ionic in 2018. Since then, I have worked on many single page applications and produced cross platform applications which work on Desktop, Android, iOS and PWA. I also started learning many backend technologies as well such as Node, Express and MongoDB. My college classes complimented my online learning and I have been able to develop complete solutions for different problems using my skills as a Full Stack Developer.
+    As the Founder and CEO of DivDash, I manage teams of professional developers, guiding them through complex software projects using a modern tech stack that includes NextJS, Angular, and Firestore. Our work at DivDash has produced notable solutions such as razacar, a B2B commuting solution featured in Google’s 2021 Global Solution Challenge, and DivAuctions, a customizable auction platform integrated with CRM systems.
   </p>
-  <h1>Skills 👾</h1>
   <p>
-    My skill set is quite diverse as I have learned by myself through the Internet but also through my college courses. My skills can be broken down into the general categories of Industries, Tools, Languages and Frameworks that I have learned and went through over the years.
+    In addition to my entrepreneurial endeavors, I also serve as a Product Engineer at Innovit, where I have been instrumental in transitioning their Master Data Management (MDM) solutions from legacy systems to cutting-edge, cloud-based platforms. This role involves extensive front-end development using Angular and TypeScript and sophisticated back-end integrations, enhancing scalability and user experience for clients like the Mayo Clinic and B. Braun.
   </p>
+  <h2>Notable Projects 🌎</h2>
+  <ol>
+     <ul>🚙 razacar: A B2B commuting solution recognized by Google’s 2021 Global Solution Challenge.</ul>
+     <ul>👨‍⚖️ DivAuctions: A SAAS auction platform with advanced CRM data syncing capabilities.</ul>
+     <ul>🏥 Dawam: A comprehensive healthcare platform integrating clinics and diagnostic services.</ul>
+     <ul>👨‍💼 VirtualCEO: A subscription service for outsourcing executive business functions.</ul>
+     <ul>💳 Carbyne: A secure crypto-wallet with innovative QR sharing features.</ul>
+  </ol>
+  <h2>Achievements 🥇</h2>
+  <ol>
+     <ul>🏆 Recognized by Google for razacar.</ul>
+     <ul>🇵🇰 Awarded a Certificate of Excellence in AI and 4IR from the President of Pakistan.</ul>
+     <ul>🏥 Dawam: A comprehensive healthcare platform integrating clinics and diagnostic services.</ul>
+     <ul>🌟 Achieved Top Rated Plus status on Upwork, placing me among the top 3% of freelancers globally.</ul>
+  </ol>
   <h2>Industries 🏗</h2>
   <p>
     In terms of industries, I am mostly self taught in frontend development. This includes web, hybrid and cross platform app development. I have extensive experience in backend development as well. I also learned native iOS development recently and have focused mostly on learning DevOps to automate CI/CD flows. Other than these skills, I have taken courses on AI, Machine Learning and BlockChain/Cryptocurrency in college and have learned a lot about these fields.
